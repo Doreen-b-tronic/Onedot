@@ -4,11 +4,12 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-After hours of futile attempts to concentrate on their homework, Nora simply can't stand it any longer.
-They don't understand how the algorithm they learned in class was supposed to magically pop out an answer that made any sense. 
-It frustrated them how easily their teacher had gone through each step without issue. They had taken thorough notes, and yet her work was impossible to replicate.
-Nora felt concerned that they were falling behind their classmates and was mad at themselves for not being a better student. 
-The combination of irritatibility and struggling to make progress was too much for Nora!
+During a stormy night in the sewing room, Patch, a small cloth creature, awoke to a troubling discovery. 
+Somewhere in the night’s rumbling chaos, the button stitched to their chest had fallen off and rolled away. 
+Now Patch felt strangely incomplete, as though a tiny but important part of them had gone missing in the dark.
+With a quiet determination, Patch began their search across the familiar threadbare room, guided only by hope and the soft glow of Stitch the Needle Fairy.
+But the Sock Twins watched from the toy shelf with mischievous grins—they had seen something roll away, though Patch would have to prove their worth before earning the truth.
+And so Patch’s journey began, small steps carrying big courage as they set out to reclaim the button that helped them feel whole.
 do animation_player.play(&"walk_off")
-Nora angrily shoves away from their desk and SLAMS their notebook shut! It's time for a nap...
+do animation_player.animation_finished
 => END

@@ -2,44 +2,43 @@
 # SPDX-License-Identifier: MPL-2.0
 class_name Cinematic
 extends Node2D
-## Shows a dialogue, then transitions to another scene.
-##
-## Intended for use in non-interactive cutscenes, such as the intro and outro to a quest.
-## It can also be used as an easy way to display dialogue at the beginning of a level.
 
-## Emitted when the cinematic has finished. Use it if not passing [member next_scene]
-## when you need to do something else after the cinematic.
 signal cinematic_finished
 
 ## Dialogue for cinematic scene.
 @export var dialogue: DialogueResource = preload("uid://b7ad8nar1hmfs")
 
-## Optional animation player, to be used from [member dialogue] (if needed).
+## Optional animation player.
 @export var animation_player: AnimationPlayer
 
-## Optional scene to switch to once [member dialogue] is complete.
+## Optional scene to switch to afterwards.
 @export_file("*.tscn") var next_scene: String
 
-## Optional path inside [member next_scene] where the player should appear.
-## If blank, player appears at default position in the scene. If in doubt,
-## leave this blank.
+## Optional player spawn point.
 @export var spawn_point_path: String
+
+## 🔥 NEW: Drag your GameLogic node here in the editor.
+@export var game_logic_path: NodePath
 
 
 func _ready() -> void:
 	if not GameState.intro_dialogue_shown:
 		DialogueManager.show_dialogue_balloon(dialogue, "", [self])
 		await DialogueManager.dialogue_ended
+
+		# 🔥 Start the minigame (if assigned)
+		if game_logic_path != NodePath():
+			var game_logic = get_node(game_logic_path)
+			if game_logic:
+				game_logic.game_can_start.emit()
+
 		cinematic_finished.emit()
 		GameState.intro_dialogue_shown = true
 
 	if next_scene:
-		(
-			SceneSwitcher
-			. change_to_file_with_transition(
-				next_scene,
-				spawn_point_path,
-				Transition.Effect.FADE,
-				Transition.Effect.FADE,
-			)
+		SceneSwitcher.change_to_file_with_transition(
+			next_scene,
+			spawn_point_path,
+			Transition.Effect.FADE,
+			Transition.Effect.FADE,
 		)

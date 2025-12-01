@@ -1,0 +1,353 @@
+[gd_scene load_steps=27 format=4 uid="uid://bhe2nmovjyehf"]
+
+[ext_resource type="Texture2D" uid="uid://cophwiv5rmm1" path="res://scenes/quests/story_quests/verso/assets/Hallway_Tiles.png" id="1_kdnkq"]
+[ext_resource type="Texture2D" uid="uid://foyhhapskc4v" path="res://scenes/quests/story_quests/verso/assets/Locker_Walls.png" id="2_x26fn"]
+[ext_resource type="SpriteFrames" uid="uid://dy4hi40ctxeno" path="res://scenes/quests/story_quests/verso/verso_player_components/verso_player.tres" id="3_xkkge"]
+[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_0kqjv"]
+[ext_resource type="Resource" uid="uid://bxmpphcck8wsl" path="res://scenes/quests/story_quests/onedot/outro/onedot_outtro.dialogue" id="5_kdnkq"]
+[ext_resource type="Texture2D" uid="uid://bclq0dj40hyyp" path="res://scenes/quests/story_quests/verso/assets/Nora_Desk.png" id="6_42kej"]
+[ext_resource type="Texture2D" uid="uid://cwlov5125dahq" path="res://scenes/quests/story_quests/onedot/platformer/assets/thread_green.png" id="7_hdow5"]
+[ext_resource type="Texture2D" uid="uid://bpolhj8hfvbx7" path="res://scenes/quests/story_quests/onedot/platformer/assets/ND_Crochenthemum_02.png" id="8_bftq8"]
+[ext_resource type="Texture2D" uid="uid://d3bt44pwducpt" path="res://scenes/quests/story_quests/onedot/platformer/assets/ThreadSpool1.png" id="9_vlpte"]
+[ext_resource type="Texture2D" uid="uid://chs1puuiwmkon" path="res://scenes/quests/story_quests/onedot/platformer/assets/ThreadSpool2.png" id="10_kerkt"]
+[ext_resource type="Texture2D" uid="uid://b2c8e5utfbqly" path="res://scenes/quests/story_quests/onedot/platformer/assets/ND_Potion_02.png" id="11_8v8mo"]
+[ext_resource type="Texture2D" uid="uid://bi3vsgfg56mvn" path="res://scenes/quests/story_quests/onedot/platformer/assets/needle.png" id="12_wuqvj"]
+[ext_resource type="Texture2D" uid="uid://dle1oiu6dhtck" path="res://scenes/quests/story_quests/onedot/platformer/assets/ink_blob.png" id="13_si3jq"]
+[ext_resource type="Texture2D" uid="uid://croie2qh1mvdx" path="res://scenes/quests/story_quests/onedot/platformer/assets/splat.png" id="14_mbul2"]
+[ext_resource type="Texture2D" uid="uid://b8kxnhnpggfbm" path="res://scenes/quests/story_quests/onedot/platformer/assets/sparks.png" id="15_5yldh"]
+[ext_resource type="Texture2D" uid="uid://wgykn85nf3t6" path="res://scenes/quests/story_quests/onedot/platformer/assets/champ_object.png" id="16_4i1j8"]
+[ext_resource type="Texture2D" uid="uid://wslv7k5swbyu" path="res://scenes/quests/story_quests/onedot/platformer/assets/el_abrigo_target.png" id="17_nkxvc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xbxoh"]
+texture = ExtResource("1_kdnkq")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fnixv"]
+texture = ExtResource("2_x26fn")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:5/0 = 0
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3mvil"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_xbxoh")
+sources/1 = SubResource("TileSetAtlasSource_fnixv")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3mvil"]
+texture = ExtResource("2_x26fn")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0ewsc"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_3mvil")
+
+[sub_resource type="Animation" id="Animation_ld06i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(400, 349)]
+}
+
+[sub_resource type="Animation" id="Animation_7swpb"]
+resource_name = "walk_off"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(495, 478), Vector2(1010, 478)]
+}
+
+[sub_resource type="Animation" id="Animation_blo5s"]
+resource_name = "walk_on"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-50, 478), Vector2(495, 478)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qdpvj"]
+_data = {
+&"RESET": SubResource("Animation_ld06i"),
+&"walk_off": SubResource("Animation_7swpb"),
+&"walk_on": SubResource("Animation_blo5s")
+}
+
+[node name="Intro" type="Node2D"]
+texture_filter = 1
+
+[node name="TileMapLayers" type="Node2D" parent="."]
+
+[node name="Floor" type="TileMapLayer" parent="TileMapLayers"]
+tile_map_data = PackedByteArray("AAAAAAcAAAAAAAIAAAABAAcAAAABAAIAAAACAAcAAAABAAIAAAADAAcAAAABAAIAAAAEAAcAAAABAAIAAAAFAAcAAAABAAIAAAAGAAcAAAABAAIAAAAHAAcAAAABAAIAAAAIAAcAAAABAAIAAAAJAAcAAAABAAIAAAAKAAcAAAABAAIAAAALAAcAAAABAAIAAAAMAAcAAAABAAIAAAANAAcAAAABAAIAAAAOAAcAAAACAAIAAAANAAYAAAACAAEAAAANAAUAAAACAAEAAAANAAQAAAACAAEAAAANAAMAAAACAAEAAAANAAIAAAACAAEAAAABAAIAAAAAAAEAAAABAAYAAAAAAAEAAAABAAUAAAAAAAEAAAABAAQAAAAAAAEAAAABAAMAAAAAAAEAAAACAAIAAAABAAEAAAADAAIAAAABAAEAAAAEAAIAAAABAAEAAAAFAAIAAAABAAEAAAAGAAIAAAABAAEAAAAHAAIAAAABAAEAAAAIAAIAAAABAAEAAAAJAAIAAAABAAEAAAAKAAIAAAABAAEAAAALAAIAAAABAAEAAAAMAAIAAAABAAEAAAAEAAUAAAABAAEAAAAEAAQAAAABAAEAAAAEAAMAAAABAAEAAAADAAMAAAABAAEAAAACAAMAAAABAAEAAAACAAQAAAABAAEAAAACAAUAAAABAAEAAAACAAYAAAABAAEAAAADAAYAAAABAAEAAAADAAUAAAABAAEAAAADAAQAAAABAAEAAAAEAAYAAAABAAEAAAAFAAYAAAABAAEAAAAFAAUAAAABAAEAAAAFAAQAAAABAAEAAAAFAAMAAAABAAEAAAAGAAMAAAABAAEAAAAGAAQAAAABAAEAAAAGAAUAAAABAAEAAAAGAAYAAAABAAEAAAAHAAYAAAABAAEAAAAHAAUAAAABAAEAAAAHAAQAAAABAAEAAAAHAAMAAAABAAEAAAAIAAMAAAABAAEAAAAIAAQAAAABAAEAAAAIAAUAAAABAAEAAAAIAAYAAAABAAEAAAAJAAYAAAABAAEAAAAJAAUAAAABAAEAAAAJAAQAAAABAAEAAAAJAAMAAAABAAEAAAAKAAMAAAABAAEAAAAKAAQAAAABAAEAAAAKAAUAAAABAAEAAAAKAAYAAAABAAEAAAALAAYAAAABAAEAAAALAAUAAAABAAEAAAALAAQAAAABAAEAAAALAAMAAAABAAEAAAAMAAMAAAABAAEAAAAMAAQAAAABAAEAAAAMAAUAAAABAAEAAAAMAAYAAAABAAEAAAABAAEAAAAAAAAAAAANAAEAAAACAAAAAAACAAEAAAABAAAAAAADAAEAAAABAAAAAAAEAAEAAAABAAAAAAAFAAEAAAABAAAAAAAGAAEAAAABAAAAAAAHAAEAAAABAAAAAAAIAAEAAAABAAAAAAAJAAEAAAABAAAAAAAKAAEAAAABAAAAAAALAAEAAAABAAAAAAAMAAEAAAABAAAAAAAOAAYAAAABAAIAAAAAAAYAAAABAAIAAAA=")
+tile_set = SubResource("TileSet_3mvil")
+
+[node name="Walls" type="TileMapLayer" parent="TileMapLayers"]
+tile_map_data = PackedByteArray("AAAAAAYAAAABAAMAAAAOAAYAAAABAAMAAAANAAEAAAABAAMAAAAMAAEAAAABAAMAAAALAAEAAAABAAMAAAAKAAEAAAABAAMAAAAJAAEAAAABAAMAAAAIAAEAAAABAAMAAAAHAAEAAAABAAMAAAAGAAEAAAABAAMAAAAFAAEAAAABAAMAAAAEAAEAAAABAAMAAAADAAEAAAABAAMAAAACAAEAAAABAAMAAAABAAEAAAABAAMAAAAAAAUAAAACAAEAAAAAAAQAAAACAAEAAAAAAAMAAAACAAEAAAAAAAIAAAACAAEAAAAAAAEAAAACAAEAAAAAAAAAAAACAAEAAAABAAAAAAACAAEAAAACAAAAAAACAAEAAAADAAAAAAACAAEAAAAEAAAAAAACAAEAAAAFAAAAAAACAAEAAAAGAAAAAAACAAEAAAAHAAAAAAACAAEAAAAIAAAAAAACAAEAAAAJAAAAAAACAAEAAAAKAAAAAAACAAEAAAALAAAAAAACAAEAAAAMAAAAAAACAAEAAAANAAAAAAACAAEAAAAOAAAAAAACAAEAAAAOAAEAAAACAAEAAAAOAAIAAAACAAEAAAAOAAMAAAACAAEAAAAOAAQAAAACAAEAAAAOAAUAAAACAAEAAAAOAAgAAAACAAEAAAANAAgAAAACAAEAAAAMAAgAAAACAAEAAAALAAgAAAACAAEAAAAKAAgAAAACAAEAAAAJAAgAAAACAAEAAAAIAAgAAAACAAEAAAAHAAgAAAACAAEAAAAGAAgAAAACAAEAAAAFAAgAAAACAAEAAAAEAAgAAAACAAEAAAADAAgAAAACAAEAAAACAAgAAAACAAEAAAABAAgAAAACAAEAAAAAAAgAAAACAAEAAAA=")
+tile_set = SubResource("TileSet_0ewsc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(153, 366)
+zoom = Vector2(1.4, 1.4)
+limit_left = 0
+limit_top = 0
+limit_right = 960
+limit_bottom = 540
+position_smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="OnTheGround" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(400, 349)
+sprite_frames = ExtResource("3_xkkge")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_qdpvj")
+}
+
+[node name="ScreenOverlay" type="CanvasLayer" parent="."]
+
+[node name="Node2D" type="Node2D" parent="." node_paths=PackedStringArray("animation_player")]
+script = ExtResource("4_0kqjv")
+dialogue = ExtResource("5_kdnkq")
+animation_player = NodePath("../OnTheGround/AnimationPlayer")
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="NoraDesk_png" type="Sprite2D" parent="."]
+position = Vector2(750, 319)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("6_42kej")
+
+[node name="thread-yellow_png" type="Sprite2D" parent="."]
+position = Vector2(763, 199)
+scale = Vector2(0.0859374, 0.226562)
+texture = ExtResource("7_hdow5")
+
+[node name="crotchet" type="Sprite2D" parent="."]
+position = Vector2(776, 170)
+scale = Vector2(0.0859374, 0.226562)
+texture = ExtResource("8_bftq8")
+
+[node name="threadpool1" type="Sprite2D" parent="."]
+position = Vector2(278, 188)
+scale = Vector2(0.841797, 0.955078)
+texture = ExtResource("9_vlpte")
+
+[node name="threadpool3" type="Sprite2D" parent="."]
+position = Vector2(188, 187)
+scale = Vector2(0.841797, 0.955078)
+texture = ExtResource("9_vlpte")
+
+[node name="threadpool2" type="Sprite2D" parent="."]
+position = Vector2(376, 192)
+scale = Vector2(0.952149, 1.05566)
+texture = ExtResource("10_kerkt")
+
+[node name="threadpool4" type="Sprite2D" parent="."]
+position = Vector2(467, 191)
+scale = Vector2(0.952149, 1.05566)
+texture = ExtResource("10_kerkt")
+
+[node name="Portion" type="Sprite2D" parent="."]
+position = Vector2(847, 159)
+scale = Vector2(1.66357, 1.77783)
+texture = ExtResource("11_8v8mo")
+
+[node name="needle" type="Sprite2D" parent="."]
+position = Vector2(760.691, 242.695)
+scale = Vector2(0.634644, 0.323364)
+texture = ExtResource("12_wuqvj")
+
+[node name="ink_blob" type="Sprite2D" parent="."]
+position = Vector2(97.3457, 220.543)
+scale = Vector2(0.770447, 0.471578)
+texture = ExtResource("13_si3jq")
+
+[node name="splat" type="Sprite2D" parent="."]
+position = Vector2(721, 144)
+scale = Vector2(0.754364, 1.1875)
+texture = ExtResource("14_mbul2")
+
+[node name="sparks" type="Sprite2D" parent="."]
+position = Vector2(750, 425)
+scale = Vector2(0.754364, 1.1875)
+texture = ExtResource("15_5yldh")
+
+[node name="sparks2" type="Sprite2D" parent="."]
+position = Vector2(650, 425)
+scale = Vector2(0.754364, 1.1875)
+texture = ExtResource("15_5yldh")
+
+[node name="champ" type="Sprite2D" parent="."]
+position = Vector2(315, 243)
+scale = Vector2(0.754364, 1.1875)
+texture = ExtResource("16_4i1j8")
+
+[node name="tar" type="Sprite2D" parent="."]
+position = Vector2(550, 243)
+scale = Vector2(0.754364, 1.1875)
+texture = ExtResource("17_nkxvc")

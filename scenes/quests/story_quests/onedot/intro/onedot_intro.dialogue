@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+During a stormy night in the sewing room, Patch, a small cloth creature, awoke to a troubling discovery. 
+Somewhere in the night’s rumbling chaos, the button stitched to their chest had fallen off and rolled away. 
+Now Patch felt strangely incomplete, as though a tiny but important part of them had gone missing in the dark.
+With a quiet determination, Patch began their search across the familiar threadbare room, guided only by hope and the soft glow of Stitch the Needle Fairy.
+But the Sock Twins watched from the toy shelf with mischievous grins—they had seen something roll away, though Patch would have to prove their worth before earning the truth.
+And so Patch’s journey began, small steps carrying big courage as they set out to reclaim the button that helped them feel whole.
+=> END

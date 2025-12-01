@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bxmpphcck8wsl"
+path="res://.godot/imported/onedot_outtro.dialogue-8dfcf72430b1c60ce07cf0f5c89d07b8.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/onedot/outro/onedot_outtro.dialogue"
+dest_files=["res://.godot/imported/onedot_outtro.dialogue-8dfcf72430b1c60ce07cf0f5c89d07b8.tres"]
+
+[params]
+
+defaults=true

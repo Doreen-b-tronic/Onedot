@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://civfawmjoi8mp"
+path="res://.godot/imported/onedot_intro.dialogue-e8265a00d98181515173d864b31778bd.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/onedot/intro/onedot_intro.dialogue"
+dest_files=["res://.godot/imported/onedot_intro.dialogue-e8265a00d98181515173d864b31778bd.tres"]
+
+[params]
+
+defaults=true
